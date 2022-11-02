@@ -1,0 +1,44 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.background {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+}
+
+    .background::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: url("https://static.wixstatic.com/media/ac0a7d_d1c1238b01ff4e68bf2f4e374dd6b1af~mv2.jpg/v1/fit/w_1000%2Ch_900%2Cal_c%2Cq_80/file.jpg");
+        opacity: .1;
+    }
+
+.buttons-column {
+    text-align: end;
+}
+
+.todos-column {
+    vertical-align: middle;
+}
